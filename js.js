@@ -16,7 +16,7 @@ function myForEach(array, func){
 		func(array[i]); //this calls this funuction, a generic function for each item of an array
 	}
 }
-
+//we can pass a function as an argument
 myForEach(colors, alert);
 
 myForEach(colors, function(color){
