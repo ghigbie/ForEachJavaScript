@@ -18,3 +18,7 @@ function myForEach(array, func){
 }
 
 myForEach(colors, alert);
+
+myForEach(colors, function(color){
+	console.log(color);
+});
