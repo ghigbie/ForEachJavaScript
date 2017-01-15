@@ -16,3 +16,5 @@ function myForEach(array, func){
 		func();
 	}
 }
+
+myForEach(colors, alert);
