@@ -22,3 +22,18 @@ myForEach(colors, alert);
 myForEach(colors, function(color){
 	console.log(color);
 });
+
+Array.prototype.myForEach = function(func){
+	//we have to use this.length here
+	for(var i = 0; i < this.length; i++){
+		func(this[i]);
+	}
+}
+
+var friends = ["Charlie", "Dave", "Caitlin"];
+
+friends.myForEach(alert);
+
+friends.myForEach(function(name){
+	console.log(`I love ${name}`);
+});
