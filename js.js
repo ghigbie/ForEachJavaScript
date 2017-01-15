@@ -9,6 +9,10 @@ colors.forEach(function(color){
 
 var nums = [45, 65, 77, 34];
 
-myForEach(nums, function(num){
-	console.log(num);
-});
+function myForEach(array, func){
+	//loop through array and call func for each item in the array
+	for(var i = 0; i < array.length; i++){
+		//call func() for each item in array
+		func();
+	}
+}
