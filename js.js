@@ -17,6 +17,7 @@ function myForEach(array, func){
 	}
 }
 //we can pass a function as an argument
+//the function wont be executed until the parenthesis are added at the end
 myForEach(colors, alert);
 
 myForEach(colors, function(color){
